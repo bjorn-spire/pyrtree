@@ -104,6 +104,10 @@ class _NodeCursor(object):
         self.rect = rect
         self.next_sibling = next_sibling
         self.first_child = first_child
+        
+    def __gt__(self, other):
+        # Hack to avoid a problem when trying to call `max` inside of `_balance()`
+        return True
 
     def walk(self, predicate):
         if (predicate(self, self.leaf_obj())):
