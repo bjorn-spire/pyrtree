@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name = "pyrtree",
     packages = ["pyrtree"],
-    version = "0.50",
+    version = "0.50.20171128",
     description = "2-Dimensional RTree spatial index",
     author = "Dan Shoutis",
     author_email = "dan@shoutis.org",
